@@ -4,7 +4,7 @@ code_portfolio_data_scientist
 
  tree -L 2
 
- 
+
 learn from https://github.com/alshedivat/al-folio
 
 
@@ -34,10 +34,10 @@ export PATH="/opt/homebrew/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ----
-
+----------------------------- COMMAND ----------
 接下来，运行以下命令以启动本地Jekyll服务器：
 bundle exec jekyll serve --lsi
-
+-----------------------------
   Populating LSI... 
 Rebuilding index... 
                     
