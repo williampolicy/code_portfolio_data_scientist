@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://williampolicy.github.io/code_portfolio_data_scientist/sitemap.xml
