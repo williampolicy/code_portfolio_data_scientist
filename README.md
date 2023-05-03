@@ -110,5 +110,66 @@ Link to your social media connections, too. This theme is set up to use Font Awe
 
 
 
+---
+
+基于你所提供的信息，我假定你已经在本地电脑上安装并配置好了 Git 和 GitHub。以下是将你的个人网页部署到 GitHub Pages 的步骤：
+
+初始化并提交你的项目：
+
+如果你尚未初始化你的 Git 仓库，你需要在你的项目根目录中打开终端并输入以下命令：
+
+bash
+Copy code
+git init
+接下来，添加你的所有文件到新建的 Git 仓库：
+
+bash
+Copy code
+git add .
+然后，提交这些文件：
+
+bash
+Copy code
+git commit -m "Initial commit"
+在 GitHub 上创建一个新的仓库：
+
+你需要在 GitHub 上创建一个新的仓库。该仓库的名称必须为 <your-github-username>.github.io。你可以在 GitHub 网站的 "Repositories" 部分找到 "New" 按钮来创建新的仓库。
+
+将你的本地仓库链接到 GitHub 仓库：
+
+一旦你在 GitHub 上创建了新的仓库，你需要将你的本地仓库链接到它。你可以通过以下命令来做到这一点，记得将 <your-github-username> 替换为你的 GitHub 用户名：
+
+bash
+Copy code
+git remote add origin https://github.com/<your-github-username>/<your-github-username>.github.io.git
+推送你的代码到 GitHub 仓库：
+
+现在你已经将你的本地仓库链接到了你的 GitHub 仓库，你可以通过以下命令将你的代码推送到 GitHub：
+
+bash
+Copy code
+git push -u origin master
+这会将你的代码推送到 GitHub，并将你的本地 "master" 分支与 GitHub 上的 "master" 分支链接起来。
+
+配置 _config.yml 文件：
+
+在你的 _config.yml 文件中，你需要将 url 设置为 https://<your-github-username>.github.io，并将 baseurl 留空。
+
+提交和推送你的更改：
+
+如果你修改了任何文件（例如 _config.yml），你需要再次提交并推送这些更改：
+
+bash
+Copy code
+git add .
+git commit -m "Update _config.yml"
+git push
+查看你的网页：
+
+你的网页现在应该可以通过 https://<your-github-username>.github.io 访问了。可能需要几分钟的时间来生成你的网页。如果你不能立即看到你的网页，试着过一会儿再次访问。
+
+这就是基本的部署流程。如果你遇到任何问题，或者需要更详细的步骤，我会很乐意提供进一步的帮助。
+----
+
 
 
